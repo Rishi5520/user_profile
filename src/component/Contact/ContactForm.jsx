@@ -1,13 +1,11 @@
-import React, {  useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 // import apiKey from "../Data/key";
 import Swal from "sweetalert2";
+import apiKey from "../Data/Key";
 
 const ContactForm = () => {
-
-
-
   const form = useRef();
   const [data, setData] = useState({
     user_name: "",
@@ -20,22 +18,22 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        // apiKey.SERVICE_ID,
-        // apiKey.TEMPLATE_ID,
-        // form.current,
-        // apiKey.PUBLIC_KEY
+        apiKey.SERVICE_ID,
+        apiKey.TEMPLATE_ID,
+        form.current,
+        apiKey.PUBLIC_KEY
       )
       .then(
         (result) => {
           console.log(result.text);
-         
-Swal.fire({
-  position: "top-end",
-  icon: "success",
-  title: "Your work has been saved",
-  showConfirmButton: false,
-  timer: 1500
-});
+
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your work has been saved",
+            showConfirmButton: false,
+            timer: 1500,
+          });
           setData({
             user_name: "",
             user_email: "",
@@ -50,7 +48,7 @@ Swal.fire({
             icon: "success",
             title: "Your work has been saved",
             showConfirmButton: false,
-            timer: 1500
+            timer: 1500,
           });
         }
       );
@@ -76,7 +74,7 @@ Swal.fire({
         required
         name="user_name"
         className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]"
-        style={{border: `3px solid #3464eb`}}
+        style={{ border: `3px solid #3464eb` }}
         onChange={changeHandler}
         value={data.user_name}
       />
@@ -86,7 +84,7 @@ Swal.fire({
         required
         name="user_email"
         className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]"
-        style={{border: `3px solid #3464eb`}}
+        style={{ border: `3px solid #3464eb` }}
         onChange={changeHandler}
         value={data.user_email}
       />
@@ -95,7 +93,7 @@ Swal.fire({
         placeholder="Phone Number"
         name="user_phone"
         className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]"
-        style={{border: `3px solid #3464eb`}}
+        style={{ border: `3px solid #3464eb` }}
         onChange={changeHandler}
         value={data.user_phone}
       />
@@ -105,12 +103,14 @@ Swal.fire({
         placeholder="Message"
         required
         className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]"
-        style={{border: `3px solid #3464eb`}}
+        style={{ border: `3px solid #3464eb` }}
         onChange={changeHandler}
         value={data.message}
       />
-      <button className="mt-8 cursor-pointer rounded-[34px] text-white text-[16px] py-[11px] px-[26px] bg-blue-700 shadow-xl shadow-blue-700 font-semibold"
-      style={{background: `#3464eb `, boxShadow: `#3464eb`}}>
+      <button
+        className="mt-8 cursor-pointer rounded-[34px] text-white text-[16px] py-[11px] px-[26px] bg-blue-700 shadow-xl shadow-blue-700 font-semibold"
+        style={{ background: `#3464eb `, boxShadow: `#3464eb` }}
+      >
         Submit
       </button>
     </form>

@@ -38,7 +38,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="bg-[#e1e8ef] w-[19rem] rounded-2xl self-center flex">
-            <div className="my-[0.7rem] ml-[0.7rem] p-4 rounded-2xl text-white text-xl self-center bg-[#004aad]" style={{background: `#3464eb`}}>
+            <div className="my-[0.7rem] ml-[0.7rem] p-4 rounded-2xl text-white text-xl self-center bg-[#004aad]" style={{background: `#3464e`}}>
               <CiLocationOn />
             </div>
             <div className="my-[0.7rem] ml-[0.7rem] self-center">
