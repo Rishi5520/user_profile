@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { TweenOneGroup } from 'rc-tween-one';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <TweenOneGroup>
   <React.StrictMode>
     <BrowserRouter>
+    <SpeedInsights>
     <App />
+    </SpeedInsights>
     </BrowserRouter>
   </React.StrictMode>
   </TweenOneGroup>
