@@ -40,7 +40,9 @@ const NavigationBar = () => {
       </ul>
     </div>
   </div>
+  </div>
 </nav>
+
 </>
 
   )
