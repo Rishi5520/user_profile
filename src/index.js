@@ -5,8 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { TweenOneGroup } from 'rc-tween-one';
-// import { SpeedInsights } from "@vercel/speed-insights/react";
-// import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from '@vercel/analytics/react';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,10 +14,11 @@ root.render(
   <TweenOneGroup>
   <React.StrictMode>
     <BrowserRouter>
-  
-    {/* <Analytics> */}
+  <SpeedInsights>
+    <Analytics>
     <App />
-    {/* </Analytics> */}
+    </Analytics>
+    </SpeedInsights>
     
     </BrowserRouter>
   </React.StrictMode>
