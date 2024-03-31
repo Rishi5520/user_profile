@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { FaCode } from "react-icons/fa";
 import ReactWhatsapp from "react-whatsapp";
 import { BiLogoWhatsappSquare } from "react-icons/bi";
@@ -11,20 +10,20 @@ import { ReactTyped } from "react-typed";
 
 const HeroSection = () => {
   return (
-    <div className="w-[100%] justify-between  flex flex-col md:flex-row gap-14 md:gap-0 items-center mt-[2.5rem]">
+    <div className=" w-[100%] justify-center  flex flex-col md:flex-row gap-15 md:gap-0 items-center mt-[2.5rem]">
       {/* left side */}
-      <div className="flex relative flex-1 flex-col mx-5  justify-between">
+      <div className="flex relative flex-1 flex-col mx-5  shadow-lg rounded-sm items-center">
         <div className="flex flex-col gap-7">
-          <span className="text-[#242d49] font-bold text-5xl items-center only:">
+          <span className="text-[#242d49] font-bold text-5xl justify-center :only">
             Hy! I Am
           </span>
           <span
-            className="text-[#004aad] font-bold text-5xl"
+            className="text-[#004aad] font-bold text-5xl justify-center"
             style={{ color: "#3464eb" }}
           >
             Rishi Raj Shinde
           </span>
-          <span className="w-[90%] font-extralight mt-[10px] text-[#788097] items-center text-[24px]">
+          <span className="w-[90%] font-extralight mt-[15px] text-[#788097] items-center text-[24px]">
             Frontend Developer with High level of Experience in Web Designing
             and Development, producing the Quality work.
           </span>
@@ -68,7 +67,7 @@ const HeroSection = () => {
           <a
             className="transform scale-[3] md:scale-[4] text-[#004aad] transition-all divide-fuchsia-200 md:hover:scale-[5]"
             style={{ color: "#3464eb" }}
-            href="https://github.com/hariomchouhan"
+            href="https://github.com/Rishi8104"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -77,7 +76,7 @@ const HeroSection = () => {
           <a
             className="transform scale-[3] md:scale-[4] text-[#004aad] transition-all divide-fuchsia-200 md:hover:scale-[5]"
             style={{ color: "#3464eb" }}
-            href="https://www.linkedin.com/in/hariom-chouhan-ab6b7620a"
+            href="https://www.linkedin.com/in/rishi-raj-shinde-312786219/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -86,7 +85,7 @@ const HeroSection = () => {
           <a
             className="transform scale-[3] md:scale-[4] text-[#004aad] transition-all divide-fuchsia-200 md:hover:scale-[5]"
             style={{ color: "#3464eb" }}
-            href="https://twitter.com/Hari_om_Chouhan"
+            href="https://twitter.com/rish53062"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -95,7 +94,7 @@ const HeroSection = () => {
           <a
             className="transform scale-[3] md:scale-[4] text-[#004aad] transition-all divide-fuchsia-200 md:hover:scale-[5]"
             style={{ color: "#3464eb" }}
-            href="https://stackoverflow.com/users/19839122/hariom-chouhan"
+            href="https://stackoverflow.com/users/19938716/rishiraj-shinde"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -25,7 +25,7 @@ const Contact = () => {
             </div>
             <div className="my-[0.7rem] ml-[0.7rem] self-center">
               <p className="font-semibold">Call Me</p>
-              <p>+91 97709 94821</p>
+              <p>+91 90391 35819</p>
             </div>
           </div>
           <div className="bg-[#e1e8ef] w-[19rem] rounded-2xl self-center flex">
@@ -34,7 +34,7 @@ const Contact = () => {
             </div>
             <div className="my-[0.7rem] ml-[0.7rem] self-center">
               <p className="font-semibold">Email</p>
-              <p>hariomchouhan430@gmail.com</p>
+              <p>Rishirajshinde1610@gmail.com</p>
             </div>
           </div>
           <div className="bg-[#e1e8ef] w-[19rem] rounded-2xl self-center flex">

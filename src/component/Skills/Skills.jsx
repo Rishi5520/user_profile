@@ -2,6 +2,7 @@ import React from 'react'
 import Swal from 'sweetalert2';
 import Resume from '../../assets/Resume.pdf'
 import { BiSolidDownload } from 'react-icons/bi'
+import { Parallax } from 'rc-scroll-anim';
 const Skills = () => {
   const skillsData = [
     "React",
@@ -57,12 +58,14 @@ const Skills = () => {
       <div className="w-full flex flex-wrap justify-center items-center gap-[40px]">
         <div className="flex justify-center items-center gap-[20px] flex-wrap">
           {skillsData.map((data, index) => (
-            <span
+            <Parallax
+            animation={{ x: 0 }}
+          style={{ transform: 'translateX(-100px)', margin: '10px auto' }}
               className="py-[8px] px-[12px] rounded-[8px] bg-[#e1e8ef] text-xl md:hover:scale-110 transition-all duration-400"
               key={index}
             >
               {data}
-            </span>
+            </Parallax>
           ))}
         </div>
 
@@ -73,13 +76,13 @@ const Skills = () => {
         <p className="text-xl text-center">
           Bachelor in Technology in Computer Science Of Information Technology
           Engineering :{" "}
-          <span
+          <Parallax
             style={{ color: `#3464eb` }}
             className="text-[#004aad] text-[1.3rem] font-[500]"
           >
             7.59 CGPA
-          </span>{" "}
-          Acropolis Institute of Technology and Research, Indore (M.P)
+          </Parallax>{" "}
+          Shree Vaishnav Poloytanic Collage , Indore (M.P)
         </p>
       </div>
     </div>

@@ -1,5 +1,6 @@
 /* eslint-disable react/style-prop-object */
 import React from "react";
+import Skills from "../Skills/Skills";
 
 const About = () => {
   return (
@@ -22,11 +23,12 @@ const About = () => {
             </pre>
           </div>
         </div>
-
+        <div className="w-full h-[100%]">
+        <Skills/>
+        </div>
         
       </div>
 
-      <div></div>
     </>
   );
 };
