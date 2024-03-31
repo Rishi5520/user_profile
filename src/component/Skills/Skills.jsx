@@ -26,7 +26,7 @@ const Skills = () => {
       {/* left side */}
       <div className="w-full px-4 flex flex-col justify-center md:justify-start items-center md:items-start">
         <h2 className="text-[4rem] font-bold text-[#242d49]">
-          <span>My</span> <span>Skills</span>
+        <span>Services</span>
         </h2>
         <h2
           className="text-[4rem] font-bold text-blue-700"

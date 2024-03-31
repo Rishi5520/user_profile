@@ -1,5 +1,5 @@
 
-import React, { useContext } from "react";
+import React from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";

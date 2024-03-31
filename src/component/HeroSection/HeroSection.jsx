@@ -5,14 +5,19 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaStackOverflow } from "react-icons/fa";
 import myPic from "../../assets/profile.png";
+import { animated, useSpring } from "@react-spring/web";
 
 import { ReactTyped } from "react-typed";
 
 const HeroSection = () => {
+  const props = useSpring({
+    from: { opacity: 5 },
+    to: { opacity: 2},
+  })
   return (
-    <div className=" w-[100%] justify-center  flex flex-col md:flex-row gap-15 md:gap-0 items-center mt-[2.5rem]">
+    <animated.div style={props} className=" w-[100%] justify-center  flex flex-col md:flex-row gap-15 md:gap-0 items-center mt-[2.5rem]">
       {/* left side */}
-      <div className="flex relative flex-1 flex-col mx-5  shadow-lg rounded-sm items-center">
+      <animated.div style={props} className="flex relative flex-1 flex-col mx-5  shadow-2xl rounded-2xl items-center">
         <div className="flex flex-col gap-7">
           <span className="text-[#242d49] font-bold text-5xl justify-center :only">
             Hy! I Am
@@ -109,7 +114,7 @@ const HeroSection = () => {
             <BiLogoWhatsappSquare />
           </ReactWhatsapp>
         </div>
-      </div>
+      </animated.div>
       <img
         src={myPic}
         alt="Rishiraj Shinde"
@@ -117,7 +122,7 @@ const HeroSection = () => {
         draggable="false"
         loading="lazy"
       />
-    </div>
+    </animated.div>
   );
 };
 
